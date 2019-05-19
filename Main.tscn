@@ -30,5 +30,4 @@ transform = Transform( 0.118741, 0, 0, 0, 0.111952, 0, 0, 0, 0.123748, 0, 0.1510
 script = ExtResource( 4 )
 
 [node name="WhiteBall" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -1.14818, 0.20327, 0 )
-
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -2.43858, 0.20327, 1.18823 )
