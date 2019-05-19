@@ -1,34 +1,39 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=4]
 [ext_resource path="res://Assets/WhiteBall.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Table.tscn" type="PackedScene" id=6]
 
 [node name="Spatial" type="Spatial"]
 
 [node name="floor" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 0.00147009, 0, -0.00397015 )
 
 [node name="wall-1" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 2.25, 0, 0, 0, 1, 0, 0.0934622, 1.4975 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 2.25, 0, 1, 0, -4.37114e-008, -1.49603, 0.0934622, -0.00397021 )
 
 [node name="wall-2" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 2.25, 0, 0, 0, 1, 0, 0.0934622, -1.5 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 2.25, 0, 1, 0, -4.37114e-008, 1.50147, 0.0934622, -0.00397008 )
 
 [node name="wall-3" parent="." instance=ExtResource( 2 )]
-transform = Transform( -2.40413e-008, 0, -0.996, 0, 2.241, 0, 0.55, 0, -4.35365e-008, -2.79877, 0.0934622, 0.000542963 )
+transform = Transform( -0.55, 0, 8.7073e-008, 0, 2.241, 0, -4.80826e-008, 0, -0.996, 0.000927248, 0.0934622, -2.80274 )
 
 [node name="wall-4" parent="." instance=ExtResource( 2 )]
-transform = Transform( -2.40413e-008, 0, -0.996, 0, 2.241, 0, 0.55, 0, -4.35365e-008, 2.80421, 0.0934622, -0.001703 )
+transform = Transform( -0.55, 0, 8.7073e-008, 0, 2.241, 0, -4.80826e-008, 0, -0.996, 0.00317297, 0.0934622, 2.80024 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, 3.32525, 0 )
+transform = Transform( -4.37114e-008, 1, 4.37114e-008, 0, -4.37114e-008, 1, 1, 4.37114e-008, 1.91069e-015, 0.00147009, 3.32525, -0.00397015 )
 
 [node name="KinematicBody" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.118741, 0, 0, 0, 0.111952, 0, 0, 0, 0.123748, 0, 0.151061, 0 )
+transform = Transform( -5.19033e-009, 0, -0.123748, 0, 0.111952, 0, 0.118741, 0, -5.4092e-009, 0.00147009, 0.151061, -0.00397015 )
 script = ExtResource( 4 )
 
 [node name="WhiteBall" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -2.43858, 0.20327, 1.18823 )
+transform = Transform( -4.37114e-009, 0, -0.1, 0, 0.1, 0, 0.1, 0, -4.37114e-009, -0.18676, 0.20327, -1.44255 )
+
+[node name="Spatial" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 41, 0, 0 )
 

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/10523_Pool_Table_v1_L3.obj-cab7282ef6731c2a02ecac65064cf4d8.mesh"
+
+[deps]
+
+files=[ "res://.import/10523_Pool_Table_v1_L3.obj-cab7282ef6731c2a02ecac65064cf4d8.mesh" ]
+
+source_file="res://Assets3D/10523_Pool_Table_v1_L3.obj"
+dest_files=[ "res://.import/10523_Pool_Table_v1_L3.obj-cab7282ef6731c2a02ecac65064cf4d8.mesh", "res://.import/10523_Pool_Table_v1_L3.obj-cab7282ef6731c2a02ecac65064cf4d8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
